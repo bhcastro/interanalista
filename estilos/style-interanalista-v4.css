@@ -270,12 +270,12 @@ footer a:hover {
     color: var(--cor01);
     border-radius: 40%;
 }
-
+        /*MEDIA QUERRY*/
 @media (max-width: 500px){
     
     * {
         padding: 0px;
-        margin: -1px;
+        margin: 0px;
     }
 
     /*NAV*/
@@ -342,6 +342,10 @@ footer a:hover {
     textarea {
         width: 95%;
         margin: 5% auto;
+    }
+    #questao03 ol {
+        padding: 5% 0% 0% 5%;
+        text-align: left;
     }
 
     /*BOTÕES*/
