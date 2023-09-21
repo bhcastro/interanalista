@@ -93,8 +93,8 @@ main {
     font-family: var(--fonte-texto);
     font-weight: normal;
     text-align: center;
-    width: 75%;
-    margin: 0% 15% 5% 15%;
+    width: 70%;
+    margin: 0% auto 5% auto;
     background-color: var(--cor-main);
     box-shadow: 5px 5px 10px var(--sombra-caixas);
     border: 1px solid var(--cor-bordas);
