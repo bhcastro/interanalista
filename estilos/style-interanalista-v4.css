@@ -303,18 +303,18 @@ footer a:hover {
     }
     main div {
         box-sizing: border-box;
-        margin: 10% auto;
+        margin: 10% 0%;
         border-radius: 0px 15px;
     }
 
     /*QUESTÃO 01*/
     #questao1 {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     /*QUESTÃO 02*/
     #questao2 {
-        max-width: 90%;
+        max-width: 100%;
     }
     #questao2 > ol {
         display: flex;
@@ -332,14 +332,15 @@ footer a:hover {
 
     /*QUESTÃO 03*/
     #questao03 {
+        width: 100%;
         box-sizing: border-box;
         padding: 0px;
     }
     table {
-        width: 97%;
+        width: 100%;
     }
     textarea {
-        width: 90%;
+        width: 95%;
         margin: 5% auto;
     }
 
