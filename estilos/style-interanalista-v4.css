@@ -275,12 +275,13 @@ footer a:hover {
     
     * {
         padding: 0px;
-        margin: 0px;
+        margin: -1px;
     }
 
     /*NAV*/
     nav {
         flex-direction: column;
+        padding: 0px 0px 25px 0px;
     }
     nav > select {
         width: 50%;
@@ -296,6 +297,10 @@ footer a:hover {
     }
 
     /*MAIN*/
+    main {
+        width: 90%;
+        margin: auto;
+    }
     main div {
         box-sizing: border-box;
         margin: 10% auto;
