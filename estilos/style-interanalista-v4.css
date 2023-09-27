@@ -181,13 +181,21 @@ table {
     width: 50%;
     height: 10%;
     margin: 5% auto 0.5% auto;
-}
-#cabecalho {
     background-color: white;
 }
-tr {
+
+
+tbody {
+    background-color: white;
+}
+
+thead, tfoot {
+    background-color: var(--cor02);
+}
+tbody > tr:nth-child(even){
     background-color: #94f8d067;
 }
+
 th, td {
     border: 1.5px solid black;
     padding: 2%;
@@ -202,12 +210,8 @@ th, td {
 .B1 > input{
     width: 45%;
     text-align: center;
+}
 
-}
-.linha {
-    width: 20%;
-    background-color: white;
-}
 
 #questao03 ol {
     list-style-position: inside;
@@ -245,25 +249,25 @@ th, td {
     margin: 2%;
     border-radius: 20px;
 }
+#calcular:hover {
+    background-color: var(--caixas-preenchimento);
+}
 
 /*FOOTER*/
 footer {
-    font-weight: bold;
     text-align: center;
     background-color: var(--cor01);
     color: white;
     font-family: 'Noto Sans Sogdian', sans-serif;
-}
-footer {
     padding: 0.5% 0%;
 }
-footer strong {
-    margin: 5px 5px;
-}
+
 footer a {
+    font-weight: bold;
     font-family: var(--fonte-header);
     text-decoration: none;
     color: white;
+    padding: 0 5px;
 }
 footer a:hover {
     background-color: white;
