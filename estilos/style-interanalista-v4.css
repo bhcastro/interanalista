@@ -273,7 +273,10 @@ footer a:hover {
     color: var(--cor01);
     border-radius: 40%;
 }
-        /*MEDIA QUERRY*/
+
+
+
+/*MEDIA QUERRY*/
 @media (max-width: 500px){
     
     * main body {
@@ -315,7 +318,7 @@ footer a:hover {
 
     /*QUESTÃO 01*/
     #questao1 {
-        max-width: 90%;
+        width: 90%;
     }
     #questao1 > ol {
         display: flex;
