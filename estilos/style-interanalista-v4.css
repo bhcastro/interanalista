@@ -146,7 +146,7 @@ main div {
 
 /*QUESTÃO 02*/
 #questao2 {
-    max-width: 83%;
+    width: 83%;
     margin-top: 0px;
 }
 #questao2 ol {
@@ -157,10 +157,10 @@ main div {
 #questao2 li {
     margin: 20px 20px 20px 0px;
 }
-#questao2 input {
+#alt_A {
     margin-left: 20px;
 }
-#questao2 .radio {
+.radio {
     width: auto;
     height: auto;
     box-shadow: none;
@@ -183,7 +183,6 @@ table {
     margin: 5% auto 0.5% auto;
     background-color: white;
 }
-
 
 tbody {
     background-color: white;
@@ -277,7 +276,7 @@ footer a:hover {
         /*MEDIA QUERRY*/
 @media (max-width: 500px){
     
-    * {
+    * main body {
         padding: 0px;
         margin: 0px;
     }
@@ -302,54 +301,68 @@ footer a:hover {
 
     /*MAIN*/
     main {
-        width: 99%;
+        width: 100vw;
+        background-color: var(--cor02);
+        font-size: 0.9em;
         margin: auto;
     }
     main div {
         box-sizing: border-box;
-        margin: 10% 0%;
-        border-radius: 0px 15px;
+        margin: 10px auto;
+        border-radius: 15px;
+        padding-bottom: 0px;
     }
 
     /*QUESTÃO 01*/
     #questao1 {
-        max-width: 100%;
+        max-width: 90%;
+    }
+    #questao1 > ol {
+        display: flex;
+        flex-direction: column;
     }
 
     /*QUESTÃO 02*/
     #questao2 {
-        max-width: 100%;
+        width: 90%;
     }
     #questao2 > ol {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        text-align: left;
+        width: 99%;
     }
     #questao2 li {
         margin: 5px 0px;
     }
     .radio {
-        margin: 10px 0px 0px 0px;
+        margin: 10px;
     }
+    #alt_A {
+        margin: 10px auto;
+    }
+    
 
     /*QUESTÃO 03*/
     #questao03 {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0px;
+        width: 90%;
+        padding: 10px;
     }
     table {
         width: 100%;
+    }
+    caption {
+        margin: 10px;
     }
     textarea {
         width: 95%;
         margin: 5% auto;
     }
     #questao03 ol {
-        padding: 5% 0% 0% 5%;
         text-align: left;
+    }
+    li input {
+        margin: 10px;
     }
 
     /*BOTÕES*/
