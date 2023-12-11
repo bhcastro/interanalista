@@ -32,7 +32,7 @@ function somar() {
     document.getElementById('total');
     total.innerHTML = soma;
 }
-totalCelulas.onclick = somar
+totalCelulas.onclick = somar;
 
 let RBC = prompt('Digite o valor de RBC');
 document.getElementById('valor-rbc');
