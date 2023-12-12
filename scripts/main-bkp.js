@@ -1,9 +1,3 @@
-let confirmar = document.getElementById('enviar');
-function enviar() {
-    window.alert('Respostas enviadas, boa sorte!');
-}
-confirmar.onclick=enviar;
-
 let zerar = document.getElementById('limpar');
 function limpar() {
     document.getElementById('total');
@@ -33,12 +27,6 @@ function somar() {
     total.innerHTML = soma;
 }
 totalCelulas.onclick = somar;
-
-let RBC = prompt('Digite o valor de RBC');
-document.getElementById('valor-rbc');
-span.innerHTML = RBC;
-
-
 
 
 
