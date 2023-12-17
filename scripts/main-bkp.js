@@ -25,8 +25,8 @@ function somar() {
     let soma = cel1 + cel2 + cel3 + cel4 + cel5 + cel6 + cel7 + cel8 + cel9 + cel10 + cel11 + cel12 + cel13 + cel14;
     document.getElementById('total');
     total.innerHTML = soma;
+    if (soma != 100){
+    alert ('Valor de células deve ser 100.');
+}else total.innerHTML = soma;
 }
 totalCelulas.onclick = somar;
-
-
-
