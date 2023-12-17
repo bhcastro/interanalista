@@ -15,28 +15,28 @@
         </header>
         <form autocomplete="off" action="https://formspree.io/f/xjvqwaad" method="post">
             <nav>
-                <!--Selecionar a Unidade-->
-                <label id="unidade" for="Unidade">
+
+                <!--Unidade-->
+                <label for="Unidade">
                     <img class="icones" src="imagens/hospital-24px.png" alt="Unidade">
                 </label>
-                <select name="Unidade" required>
-                    <option selected>Unidade...</option>
-                    <option>Bela Vista</option>
-                    <option>Litoral</option>
-                    <option>Santana</option>
-                </select>
-                
+                    <span id="unidade" name="Unidade">Sua Unidade aqui</span>
+
                 <!--ID-->
-                <label for="Matricula"><img class="icones" src="imagens/id-24px.png" alt="ID"></label>
-                <input type="number" id="id" name="Matricula" required placeholder="ID...">
+                <label for="Matricula">
+                    <img class="icones" src="imagens/id-24px.png" alt="ID">
+                </label>
+                <span id="id" name="Matricula">Seu ID aqui</span>
 
                 <!--NOME-->
-                <label for="Nome"><img class="icones" src="imagens/employee-24px.png" alt="Analista"></label>
-                <input id="nome" name="Nome" required placeholder="Nome...">
+                <label for="Nome">
+                    <img class="icones" src="imagens/employee-24px.png" alt="Analista">
+                </label>
+                <span id="nome" name="Nome">Seu nome aqui</span>
 
                 <!--DATA DE REALIZAÇÃO-->
                 <label for="Data"><img class="icones" src="imagens/calendar-24px.png" alt="Data"></label>
-                <input id="data" name="Data" required type="date" style="width: 193px;">
+                <span id="data" name="Data">Insira a data de realização</span>
             </nav>
             <!-- Início da prova-->
             <main>       
