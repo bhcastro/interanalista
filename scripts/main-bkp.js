@@ -1,3 +1,26 @@
+// let analista = prompt ('Digite seu nome:');
+// document.getElementById('nome').innerHTML = analista;
+
+// let matricula = prompt ('Digite seu ID:');
+// document.getElementById('id').innerHTML = matricula;
+
+// let filial = prompt ('Digite sua unidade:');
+// document.getElementById('unidade').innerHTML = filial;
+
+let data = new Date();
+console.log(data)
+
+let dia = data.getDate();
+dia = dia <10? "0" + dia : dia;
+
+let mes = data.getMonth();
+mes = mes <10? "0" + mes + 1 : mes + 1;
+
+let ano = data.getFullYear();
+
+let dataRealizacao = dia + '/' + mes + '/' + ano;
+document.getElementById('data').innerHTML = dataRealizacao;
+
 let zerar = document.getElementById('limpar');
 function limpar() {
     document.getElementById('total');
@@ -5,6 +28,8 @@ function limpar() {
 }
 zerar.onclick=limpar;
 
+let valorInferior = 'Valor de células inferior a 100, por favor reveja sua contagem.';
+let valorSuperior = 'Valor de células superior a 100, por favor reveja sua contagem.';
 let totalCelulas = document.getElementById('calcular');
 function somar() {
     let cel1 = Number(document.getElementById('cel_1').value);
@@ -23,10 +48,15 @@ function somar() {
     let cel14 = Number(document.getElementById('cel_14').value);
 
     let soma = cel1 + cel2 + cel3 + cel4 + cel5 + cel6 + cel7 + cel8 + cel9 + cel10 + cel11 + cel12 + cel13 + cel14;
-    document.getElementById('total');
-    total.innerHTML = soma;
-    if (soma != 100){
-    alert ('Valor de células deve ser 100.');
-}else total.innerHTML = soma;
+    document.getElementById('total').innerHTML = soma;
+
+    if (soma < 100){
+        alert(valorInferior);
+    }else{
+        if (soma > 100){
+            alert(valorSuperior);
+        }
+    }
+
 }
 totalCelulas.onclick = somar;
