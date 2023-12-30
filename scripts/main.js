@@ -28,8 +28,9 @@ function limpar() {
 }
 zerar.onclick=limpar;
 
-let valorInferior = 'Valor de células inferior a 100, por favor reveja sua contagem.';
-let valorSuperior = 'Valor de células superior a 100, por favor reveja sua contagem.';
+const valorInferior = 'Valor de células inferior a 100, por favor reveja sua contagem.';
+const valorSuperior = 'Valor de células superior a 100, por favor reveja sua contagem.';
+
 let totalCelulas = document.getElementById('calcular');
 function somar() {
     let cel1 = Number(document.getElementById('cel_1').value);
@@ -49,14 +50,10 @@ function somar() {
 
     let soma = cel1 + cel2 + cel3 + cel4 + cel5 + cel6 + cel7 + cel8 + cel9 + cel10 + cel11 + cel12 + cel13 + cel14;
     document.getElementById('total').innerHTML = soma;
-
     if (soma < 100){
         alert(valorInferior);
-    }else{
-        if (soma > 100){
-            alert(valorSuperior);
+    }else if(soma > 100){
+        alert(valorSuperior);
         }
-    }
-
 }
 totalCelulas.onclick = somar;
